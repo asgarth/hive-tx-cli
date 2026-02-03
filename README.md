@@ -146,6 +146,24 @@ Configuration is stored in `~/.hive-cli/config.json` with 600 permissions (read/
 
 **Security Note**: Never commit your private keys to version control!
 
+## Environment Variables
+
+You can provide credentials via environment variables instead of the config file. When set, these values take precedence over the file.
+
+- `HIVE_ACCOUNT`
+- `HIVE_POSTING_KEY`
+- `HIVE_ACTIVE_KEY`
+
+Example:
+
+```bash
+export HIVE_ACCOUNT="your-username"
+export HIVE_POSTING_KEY="your-posting-private-key"
+export HIVE_ACTIVE_KEY="your-active-private-key"
+
+hive vote --author author --permlink permlink --weight 100
+```
+
 ## Development
 
 ```bash
