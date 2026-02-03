@@ -13,6 +13,18 @@ A command-line interface wrapper for the Hive blockchain API using [hive-tx](htt
 ## Installation
 
 ```bash
+
+pnpm install -g @peakd/hive-tx-cli
+
+yarn global add @peakd/hive-tx-cli
+
+npm install -g @peakd/hive-tx-cli
+
+```
+
+## Devlopment
+
+```bash
 # Clone or download the project
 git clone <repository-url>
 cd hive-cli
@@ -30,11 +42,13 @@ pnpm link --global
 ## Quick Start
 
 1. **Configure your account:**
+
    ```bash
    hive config
    ```
 
 2. **Check configuration status:**
+
    ```bash
    hive status
    ```
