@@ -55,7 +55,7 @@ pnpm link --global
 
 3. **Query an account:**
    ```bash
-   hive account mahdiyari
+   hive account peakd
    ```
 
 ## Commands
@@ -125,7 +125,7 @@ hive broadcast '["vote",{"voter":"me","author":"you","permlink":"post","weight":
 
 ```bash
 # Specify a different Hive node
-hive --node https://api.hive.blog account mahdiyari
+hive --node https://api.hive.blog account peakd
 
 # Specify account for this command only
 hive --account myaccount vote --author author --permlink permlink --weight 100
@@ -156,7 +156,7 @@ pnpm dev
 pnpm build
 
 # Run specific command in dev mode
-pnpm dev -- account mahdiyari
+pnpm dev -- account peakd
 ```
 
 ## Dependencies
