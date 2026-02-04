@@ -5,6 +5,7 @@ import { getConfig } from './config.js';
 import { configCommand } from './commands/config.js';
 import { queryCommands } from './commands/query.js';
 import { broadcastCommands } from './commands/broadcast.js';
+import { uploadImageCommands } from './commands/upload-image.js';
 import { packageJson } from './utils.js';
 
 const program = new Command();
@@ -34,6 +35,10 @@ for (const cmd of queryCommands) {
 }
 
 for (const cmd of broadcastCommands) {
+  program.addCommand(cmd);
+}
+
+for (const cmd of uploadImageCommands) {
   program.addCommand(cmd);
 }
 

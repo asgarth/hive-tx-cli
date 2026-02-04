@@ -106,7 +106,7 @@ hive call database_api get_accounts '[["username"]]'
 hive vote --author <author> --permlink <permlink> --weight 100
 
 # Create a post
-hive comment --permlink my-post --title "My Post" --body "Content here" --tags "hive,blockchain"
+hive post --permlink my-post --title "My Post" --body "Content here" --tags "hive,blockchain"
 
 # Create a comment
 hive comment --permlink my-reply --body "Comment text" --parent-author <author> --parent-permlink <permlink>

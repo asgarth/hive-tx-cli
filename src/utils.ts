@@ -25,3 +25,7 @@ function findPackageJson(): string {
 export const packageJson = JSON.parse(
   readFileSync(findPackageJson(), 'utf-8')
 );
+
+export function getAccountName(config: any, options: any): string {
+  return options.account || config?.account || process.env.HIVE_ACCOUNT;
+}
