@@ -1,6 +1,6 @@
 # Hive CLI
 
-A command-line interface for the Hive blockchain API built on [hive-tx](https://github.com/mahdiyari/hive-tx) v6.
+A command-line interface for the Hive blockchain API built on [hive-tx](https://github.com/mahdiyari/hive-tx).
 
 ## Features
 
